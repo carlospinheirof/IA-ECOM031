@@ -9,7 +9,7 @@ public class Main {
 	public static void main(String[] args) {
 		Estado inicial = new Estado(3, 3, 0, 0, 0, 0, null);
 		LinkedList<Estado> fronteira = new LinkedList<Estado>();
-		fronteira.add(inicial);
+		fronteira.addLast(inicial);
 		boolean resultado = false;
 		while(!resultado){
 			fronteira.removeFirst();
