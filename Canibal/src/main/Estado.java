@@ -20,6 +20,22 @@ public class Estado {
 		this.pai = anterior;
 	}
 
+	public int getMis_esquerda() {
+		return mis_esquerda;
+	}
+
+	public int getMis_direita() {
+		return mis_direita;
+	}
+
+	public int getCani_esquerda() {
+		return cani_esquerda;
+	}
+
+	public int getCani_direita() {
+		return cani_direita;
+	}
+
 	public Barco getBarco() {
 		return this.barco;
 	}
@@ -35,10 +51,10 @@ public class Estado {
 	public boolean Valido(){
 		
 		boolean validade = true;
-		if(mis_esquerda < cani_esquerda){
+		if((mis_esquerda < cani_esquerda) && mis_esquerda != 0){
 			validade = false;
 		}
-		if(mis_direita < cani_direita){
+		if((mis_direita < cani_direita) && mis_direita != 0){
 			validade = false;
 		}	
 		return validade;
