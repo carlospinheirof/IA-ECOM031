@@ -4,16 +4,16 @@ import java.util.ArrayList;
 
 public class Estacao {
 	private String nome;
+	private int [] heuristicas = new int[15]; 
+	private ArrayList<Proximo> proximos = new ArrayList<Proximo>();
+	private int antecor; 
+
 	public String getNome() {
 		return nome;
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-	private int [] heuristicas = new int[15]; 
-	private ArrayList<Proximo> proximos = new ArrayList<Proximo>();
-	private int antecor; 
-	
+	}	
 	public int getAntecor() {
 		return antecor;
 	}

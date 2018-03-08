@@ -13,7 +13,9 @@ public class Main {
 		Metro metro = new Metro();
 		ArrayList<Estacao> estacoes = new ArrayList<Estacao>();
 		estacoes = metro.createMetro();
-		System.out.printf("%s", estacoes.get(0).getNome());
+		
+		
+		
 	}
 
 }
