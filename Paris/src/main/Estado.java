@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 import grafo.Estacao;
 
-public class Estado implements Comparable<Estado>{
+public class Estado{
 		private Estacao estacao = new Estacao();
 		private int coranterior;
 		private float custodoestado;
@@ -54,16 +54,5 @@ public class Estado implements Comparable<Estado>{
 
 		public float getCustodoestado() {
 			return custodoestado;
-		}
-
-		@Override
-		public int compareTo(Estado estado) {
-			 if (this.custodoestado < estado.custodoestado) {
-		            return -1;
-		        }
-		        if (this.custodoestado > estado.custodoestado) {
-		            return 1;
-		        }
-		        return 0;
 		}
 }
