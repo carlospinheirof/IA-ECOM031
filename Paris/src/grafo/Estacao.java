@@ -3,15 +3,15 @@ package grafo;
 import java.util.ArrayList;
 
 public class Estacao {
-	private String nome;
+	private int nome;
 	private int [] heuristicas = new int[15]; 
 	private ArrayList<Proximo> proximos = new ArrayList<Proximo>();
 	private int antecor; 
 
-	public String getNome() {
+	public int getNome() {
 		return nome;
 	}
-	public void setNome(String nome) {
+	public void setNome(int nome) {
 		this.nome = nome;
 	}	
 	public int getAntecor() {
